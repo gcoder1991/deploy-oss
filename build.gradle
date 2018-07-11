@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '2.0.4'
 }
 
 group 'org.gcoder'
@@ -17,4 +18,16 @@ dependencies {
     // https://mvnrepository.com/artifact/com.typesafe/config
     compile group: 'com.typesafe', name: 'config', version: '1.3.3'
 
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class':'org.gcoder.util.deploy.OssDeploy'
+    }
+}
+
+shadowJar {
+    baseName = 'deploy-oss'
+    classifier = null
+    version = null
 }
