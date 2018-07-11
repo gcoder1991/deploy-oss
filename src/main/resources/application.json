@@ -1,0 +1,9 @@
+{
+  "oss" : {
+    "endpoint" : "http://oss-cn-beijing.aliyuncs.com",
+    "accessKeyId":"",
+    "secretAccessKey":"",
+    "bucketName":"icuwow"
+  },
+  "dist" : "D:\\WebProjects\\wow-old\\dist"
+}
